@@ -1,0 +1,187 @@
+/* heda responsive lal navbar */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1a1d26;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* heda responsive lal banner */
+@media (max-width: 768px) {
+    .text-overlay {
+        display: none;
+        /* heda to hide text */
+    }
+
+    .horizontalImageContainer {
+        height: 100vw;
+        /* make the image square based on the viewport width */
+        width: 100%;
+        /* full width */
+        border-radius: 0;
+        /* no rounded corners on mobile */
+    }
+}
+
+/* heda responsive lal about us container box bel about.html */
+@media (max-width: 768px) {
+    .about-us-section {
+        flex-direction: column;
+    }
+
+    .about-us-card {
+        min-width: 320px;
+        max-width: 500px;
+        padding: 30px;
+        height: auto;
+    }
+}
+
+/* heda responsive lal OUR SERVICES title bel services.html */
+@media (max-width: 768px) {
+    .services-title {
+        font-size: 3.5rem;
+        margin-top: 350px;
+        /* heda to move OUR SERVICS down on mobile device */
+    }
+}
+
+/* heda responsive lal bills text and image bel services.html */
+@media (max-width: 768px) {
+    .bills-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bills-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding-right: 0;
+    }
+
+    .bills-image {
+        display: none;
+        /* heda to hide l image bills.jpg on mobile */
+    }
+}
+
+/* heda responsive lal transfer text and image bel services.html */
+@media (max-width: 768px) {
+    .transfer-layout {
+        flex-direction: column-reverse;
+        /* heda to move the image under the text on mobile so reverse */
+        text-align: center;
+    }
+
+    .transfer-image {
+        max-width: 90%;
+        margin-top: 20px;
+        /* heda to add space between text and image */
+    }
+
+    .transfer-text {
+        max-width: 100%;
+        padding-left: 0;
+    }
+}
+
+/* heda responsive lal gallery.html for images grid on mobile device */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 images per row on mobile */
+    }
+}
+
+/* heda l css lal services.html for mobile devices so it will hide all decorations ma 3ada the first two (easy payments and global access) */
+@media (max-width: 767px) {
+    .side-decor {
+        display: none;
+        /* heda to hide all */
+    }
+
+    /* heda to show only "easy payments" and "global access" */
+    .left-decor,
+    .right-decor {
+        display: block;
+    }
+
+    /* heda to make sure "easy payments" is above "global access" and not cut off */
+    .left-decor {
+        top: 120px;
+        /* heda to move "easy payments" lower */
+    }
+
+    .right-decor {
+        bottom: 30px;
+        /* heda to position "global access" below */
+    }
+}
+
+/* heda l css lal services.html */
+@media (min-width: 768px) {
+    .side-decor {
+        display: block;
+    }
+}
+
+/* heda l css lal about-us.html for mobile devices so it will hide all decorations ma 3ada the first one (secure solutions) */
+@media (max-width: 767px) {
+    .side-decor-about-us {
+        display: none;
+        /* heda to hide all */
+    }
+
+    /* heda to show only "secure solutions" */
+    .left-decor-about-us {
+        display: block;
+    }
+
+    /* heda to make sure "secure solutions" is above the text and not cut off */
+    .left-decor-about-us {
+        top: 120px;
+        /* heda to move "secure solutions" lower */
+    }
+}
+
+/* heda l css lal services.html */
+@media (min-width: 768px) {
+    .side-decor-about-us {
+        display: block;
+    }
+}
+
+/* heda l css lal contact.html so l contact icons will be responsive and on one line */
+@media (max-width: 480px) {
+    .contact-icons a {
+        font-size: 25px;
+    }
+}
+
+/* heda l css lal contact-us.html */
+@media (max-width: 480px) {
+    .phone-number-email-at-the-top {
+        padding-top: 100px;
+    }
+}
